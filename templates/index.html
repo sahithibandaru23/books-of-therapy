@@ -1,0 +1,109 @@
+{% extends 'base.html'%}
+
+{% block body %}
+
+<div class="container my-4" >
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://source.unsplash.com/900x350/? sale" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/900x350/?book sale" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/900x350/?sale" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+</div>
+<h1 style="text-align:center"> SALE!!! </h1>
+<h1 style="text-align:center">(OFFER ON LISTED BOOKS)</h1>
+<div class="container my-4">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img  src="data:image/png;base64,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" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ALL CARDIOLOGIST BOOKS</h5>
+        <p class="card-text">10% DISCOUNT ON PURCHAGE  ABOVE Rs500</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+
+      <a href="cbse" type="button" class="btn btn-primary"> LETS BUY IT </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-200">
+      <img src="https://img.freepik.com/premium-photo/dentist-job-title-nameplate_2227-1250.jpg?w=2000" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> ALL DENTIST BOOKS</h5>
+        <p class="card-text">10% DISCOUNT ON PURCHAGE  ABOVE Rs500</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+      <a href="icse" type="button" class="btn btn-primary"> LETS BUY IT </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-200">
+      <img src="https://media.istockphoto.com/id/506911580/photo/name-plate-on-a-desk-with-the-engraving-gynecologist.jpg?s=612x612&w=0&k=20&c=Bvh-m1VHqmX8M4WRHoK8xT419aPxveuoh7alc5HlI8g=" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> ALL GYNECOLOGIST BOOKS</h5>
+        <p class="card-text"> 10% DISCOUNT ON PURCHAGE  ABOVE Rs500</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+      <a href="state" type="button" class="btn btn-primary"> LETS BUY IT </a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container my-4">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://c8.alamy.com/comp/2J28NT9/name-plate-on-a-desk-with-the-engraving-neurologist-2J28NT9.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> ALL NEUROLOGIST BOOKS </h5>
+        <p class="card-text"> 10% DISCOUNT ON PURCHAGE  ABOVE Rs500</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+      <a href="jee" type="button" class="btn btn-primary"> LETS BUY IT </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://content.jdmagicbox.com/comp/faridabad/s8/011px129.x129.130220160708.i5s8/catalogue/kesar-ent-clinic-faridabad-sector-16a-faridabad-ent-doctors-y3j975szsx.jpg?clr=073e5f" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ALL ENT SPECILIST BOOKS</h5>
+        <p class="card-text">10% DISCOUNT ON PURCHAGE  ABOVE Rs500</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+      <a href="engg" type="button" class="btn btn-primary"> LETS BUY IT </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://thumbs.dreamstime.com/b/oncologist-room-door-patient-hand-knocking-closeup-cancer-risk-prevention-oncologist-room-door-patient-hand-knocking-closeup-128980485.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> ALL ONCOLOGIST BOOKS</h5>
+        <p class="card-text">10% DISCOUNT ON PURCHAGE  ABOVE Rs500</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+      <a href="defence" type="button" class="btn btn-primary"> LETS BUY IT </a>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock body %}

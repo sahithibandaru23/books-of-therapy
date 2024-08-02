@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>{%block title %} KNOWLEDGE SHOP{% endblock title %}</title>
+
+  </head>
+  <body style="background-image:url(data:image/jpeg;base64,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);background-repeat:repeat;">
+
+
+    <h4><CENTER> WELCOME TO BOOKS OF THERAPY</CENTER></h4>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ST-9</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">KNOW ABOUT BOOK</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/bos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           SELL/BUY
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/sell">SELL YOUR BOOK</a></li>
+            <li><a class="dropdown-item" href="/buy">BUY A BOOK</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">ENQUIRY</a></li>
+          </ul>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="/contact">CONTACT US</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+    {% block body%}
+    {% endblock body%}
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
